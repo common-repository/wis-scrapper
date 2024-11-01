@@ -1,0 +1,286 @@
+#wis-scrapperadd-form article,
+#wis-scrapperadd-form aside,
+#wis-scrapperadd-form details,
+#wis-scrapperadd-form figcaption,
+#wis-scrapperadd-form figure,
+#wis-scrapperadd-form footer,
+#wis-scrapperadd-form header,
+#wis-scrapperadd-form hgroup,
+#wis-scrapperadd-form menu,
+#wis-scrapperadd-form nav,
+#wis-scrapperadd-form section {
+	display: block
+}
+#wis-scrapperadd-form ol,
+#wis-scrapperadd-form ul {
+	list-style: none
+}
+#wis-scrapperadd-form blockquote,
+#wis-scrapperadd-form q {
+	quotes: none
+}
+#wis-scrapperadd-form blockquote:before,
+#wis-scrapperadd-form blockquote:after,
+#wis-scrapperadd-form q:before,
+#wis-scrapperadd-form q:after {
+	content: '';
+	content: none
+}
+#wis-scrapperadd-form table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+#wis-scrapperadd-form{
+	background: rgba(0,0,0,.1);
+	height:700px;
+	overflow:hidden;
+}
+#wis-scrapperadd-form #msform  {
+	padding-top:50px;
+	width: 1000px;
+	margin: 0px auto 50px;
+	position: relative;
+}
+#wis-scrapperadd-form #msform .fs-title,
+#wis-scrapperadd-form #msform .fs-subtitle{
+	text-align: center;
+}
+#wis-scrapperadd-form #msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#wis-scrapperadd-form #msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#wis-scrapperadd-form #msform input[type=text],#wis-scrapperadd-form  #msform textarea {
+	padding:5px 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#wis-scrapperadd-form #msform .action-button {
+	width: 100px;
+	background: #0073aa;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#wis-scrapperadd-form #msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #0073aa;
+}
+/*headings*/
+#wis-scrapperadd-form .fs-title {
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+#wis-scrapperadd-form .fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#wis-scrapperadd-form #progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#wis-scrapperadd-form #progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+	text-align:center;
+}
+#wis-scrapperadd-form #progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#wis-scrapperadd-form #progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#wis-scrapperadd-form #progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#wis-scrapperadd-form #progressbar li.active:before,  #progressbar li.active:after{
+	background: #0073aa;
+	color: white;
+}
+/**
+Tabs In Popup
+**/
+.w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-main,#main{transition:margin-left .4s}
+.w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
+.w3-bar .w3-button{white-space:normal}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}.w3-block{display:block;width:100%}
+.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,
+.w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-bar .w3-button{white-space:normal}
+.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+/**
+End Tabs In Popup
+**/
+#only-database-notice{padding:10px 0;}
+/** Archive Css **/
+#wis-scrapperadd-form #msform #file-settings textarea{padding: 2px 6px;height:85px;margin:0;}
+#wis-scrapperadd-form #msform #file-settings textarea[name=filter-exts]{height:27px;}
+#file-settings h4{margin-top:10px;}
+#wis-table-names,#wis-filter-tables{margin:10px 0;}
+#wis-table-names label{margin-right:10px;min-width:150px;overflow:hidden;display:inline-block;}
+/** Installer Css **/
+#wis-installer-setup{padding:0 16px}
+.wis-heading{margin:0 0 10px;}
+#wis-installer-setup #wis-enable-password{line-height: 24px;}
+#wis-installer-setup #wis-enter-password {display:none;}
+#wis-installer-setup #wis-enter-password button{height: 23px;width: 27px;border: 1px solid silver;border-radius: 0 4px 4px 0;cursor: pointer;}
+#wis-scrapperadd-form #msform #wis-installer-setup #wis-enter-password input{margin:0;height:23px;width:150px;}
+.wis-server-setting{margin:0 0 0;}
+.wis-server-setting p{margin:0;}
+#file-settings .exclude-filter h4{margin-bottom:0;float:left;}
+#file-settings .exclude-filter p{    float: right;
+	margin-bottom: 0;
+	margin-top: 8px;
+	font-size: 12px;
+}
+.single-block.step-2 ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.single-block.step-2 ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin-bottom:0;
+}
+.single-block.step-2 ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+.single-block.step-2 .tab-content{
+	display: none;
+
+	padding: 15px;
+}
+.single-block.step-2 .tab-content.current{
+	display: inherit;
+}
+.single-block.step-2 .tab-content .content-info{
+	margin:15px;
+}
+.single-block.step-2 .tab-content .content-info h4 .fa-check{
+	color:green;
+}
+.single-block.step-2 .tab-content .content-info h4,
+.single-block.step-2 .tab-content .content-info p{
+	margin:0;
+}
+.single-block.step-3 #last-title{
+	font-size:17px;font-weight:600;max-width:450px;margin:50px auto;text-align:center;
+}
+#middle-div,#middle-div-two{max-width:450px;
+	margin:50px auto 0;
+    padding: 0 0 4em;
+	box-sizing: border-box;
+}
+#middle-div .p-first,#middle-div-two .p-first{
+	display:none;
+}
+#middle-div .p-second,#middle-div-two .p-second{
+	padding: 9px;
+	background: #00D1D8;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	float: none;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+#popup-copy-clipboard{
+	display:none !important;
+}
+input[name=zip_url]{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.column-package a{
+	padding: 5px 10px;
+	background: lightgrey;
+	margin: 0 10px 0 0;
+	display: inline-block;
+}
+#second-title{text-align:center;}
+#popup-download-backup{
+	padding: 9px;
+    background: #00D1D8;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+}

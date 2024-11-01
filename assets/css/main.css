@@ -1,0 +1,180 @@
+/** This is Main CSS **/
+/* Popup box BEGIN */
+.hover_bkgr_fricc{
+	background:rgba(0,0,0,.4);
+	cursor:pointer;
+	display:none;
+	height:100%;
+	position:fixed;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:10000;
+	left:0;
+	position: relative;
+    background: none;
+}
+.hover_bkgr_fricc .helper{
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+	background-color: #fff;
+	box-shadow: 10px 10px 60px #555;
+	display: inline-block;
+	height: auto;
+	max-width: 551px;
+	min-height: 100px;
+	vertical-align: middle;
+	width: 60%;
+	position: relative;
+	border-radius: 8px;
+	padding: 15px 5%;
+	box-shadow: none;
+    padding-top: 0 !important;
+}
+.popupCloseButton {
+	background-color: #fff;
+	border: 3px solid #999;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	font-family: arial;
+	font-weight: bold;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	font-size: 25px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: none;
+}
+.popupCloseButton:hover {
+	background-color: #ccc;
+}
+.trigger_popup_fricc {
+	cursor: pointer;
+	font-size: 20px;
+	margin: 20px;
+	display: inline-block;
+	font-weight: bold;
+}
+/****
+LOADER CSS
+*****/
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 64px;
+	height: 64px;
+}
+.lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #000;
+	margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+	top: 50px;
+	left: 50px;
+}
+.lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+	top: 54px;
+	left: 45px;
+}
+.lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+	top: 57px;
+	left: 39px;
+}
+.lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+	top: 58px;
+	left: 32px;
+}
+.lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+	top: 57px;
+	left: 25px;
+}
+.lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+	top: 54px;
+	left: 19px;
+}
+.lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+	top: 50px;
+	left: 14px;
+}
+.lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+	top: 45px;
+	left: 10px;
+}
+@keyframes lds-roller {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/******
+Tick CSS
+******/
+.circ{
+	opacity: 0;
+	stroke-dasharray: 130;
+	stroke-dashoffset: 130;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	color:#fff;
+}
+.tick{
+	stroke-dasharray: 50;
+	stroke-dashoffset: 50;
+	-webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+	-o-transition: stroke-dashoffset 1s 0.5s ease-out;
+	transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+.drawn + svg .path{
+	opacity: 1;
+	stroke-dashoffset: 0;
+}
+#tick{width:100px;}
+.p-second .backup-creating{background:#ccffff;color:lightgrey;cursor:not-allowed;}

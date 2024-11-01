@@ -1,0 +1,123 @@
+#wis-scrapperadd-form html,
+#wis-scrapperadd-form body,
+#wis-scrapperadd-form div,
+#wis-scrapperadd-form span,
+#wis-scrapperadd-form applet,
+#wis-scrapperadd-form object,
+#wis-scrapperadd-form iframe,
+#wis-scrapperadd-form h1,
+#wis-scrapperadd-form h2,
+#wis-scrapperadd-form h3,
+#wis-scrapperadd-form h4,
+#wis-scrapperadd-form h5,
+#wis-scrapperadd-form h6,
+#wis-scrapperadd-form p,
+#wis-scrapperadd-form blockquote,
+#wis-scrapperadd-form pre,
+#wis-scrapperadd-form a,
+#wis-scrapperadd-form abbr,
+#wis-scrapperadd-form acronym,
+#wis-scrapperadd-form address,
+#wis-scrapperadd-form big,
+#wis-scrapperadd-form cite,
+#wis-scrapperadd-form code,
+#wis-scrapperadd-form del,
+#wis-scrapperadd-form dfn,
+#wis-scrapperadd-form em,
+#wis-scrapperadd-form img,
+#wis-scrapperadd-form ins,
+#wis-scrapperadd-form kbd,
+#wis-scrapperadd-form q,
+#wis-scrapperadd-form s,
+#wis-scrapperadd-form samp,
+#wis-scrapperadd-form small,
+#wis-scrapperadd-form strike,
+#wis-scrapperadd-form strong,
+#wis-scrapperadd-form sub,
+#wis-scrapperadd-form sup,
+#wis-scrapperadd-form tt,
+#wis-scrapperadd-form var,
+#wis-scrapperadd-form b,
+#wis-scrapperadd-form u,
+#wis-scrapperadd-form i,
+#wis-scrapperadd-form center,
+#wis-scrapperadd-form dl,
+#wis-scrapperadd-form dt,
+#wis-scrapperadd-form dd,
+#wis-scrapperadd-form ol,
+#wis-scrapperadd-form ul,
+#wis-scrapperadd-form li,
+#wis-scrapperadd-form fieldset,
+#wis-scrapperadd-form form,
+#wis-scrapperadd-form label,
+#wis-scrapperadd-form legend,
+#wis-scrapperadd-form table,
+#wis-scrapperadd-form caption,
+#wis-scrapperadd-form tbody,
+#wis-scrapperadd-form tfoot,
+#wis-scrapperadd-form thead,
+#wis-scrapperadd-form tr,
+#wis-scrapperadd-form th,
+#wis-scrapperadd-form td,
+#wis-scrapperadd-form article,
+#wis-scrapperadd-form aside,
+#wis-scrapperadd-form canvas,
+#wis-scrapperadd-form details,
+#wis-scrapperadd-form embed,
+#wis-scrapperadd-form figure,
+#wis-scrapperadd-form figcaption,
+#wis-scrapperadd-form footer,
+#wis-scrapperadd-form header,
+#wis-scrapperadd-form hgroup,
+#wis-scrapperadd-form menu,
+#wis-scrapperadd-form nav,
+#wis-scrapperadd-form output,
+#wis-scrapperadd-form ruby,
+#wis-scrapperadd-form section,
+#wis-scrapperadd-form summary,
+#wis-scrapperadd-form time,
+#wis-scrapperadd-form mark,
+#wis-scrapperadd-form audio,
+#wis-scrapperadd-form video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+#wis-scrapperadd-form article,
+#wis-scrapperadd-form aside,
+#wis-scrapperadd-form details,
+#wis-scrapperadd-form figcaption,
+#wis-scrapperadd-form figure,
+#wis-scrapperadd-form footer,
+#wis-scrapperadd-form header,
+#wis-scrapperadd-form hgroup,
+#wis-scrapperadd-form menu,
+#wis-scrapperadd-form nav,
+#wis-scrapperadd-form section {
+	display: block
+}
+#wis-scrapperadd-form body {
+	line-height: 1
+}
+#wis-scrapperadd-form ol,
+#wis-scrapperadd-form ul {
+	list-style: none
+}
+#wis-scrapperadd-form blockquote,
+#wis-scrapperadd-form q {
+	quotes: none
+}
+#wis-scrapperadd-form blockquote:before,
+#wis-scrapperadd-form blockquote:after,
+#wis-scrapperadd-form q:before,
+#wis-scrapperadd-form q:after {
+	content: '';
+	content: none
+}
+#wis-scrapperadd-form table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
